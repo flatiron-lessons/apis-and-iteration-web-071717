@@ -4,7 +4,7 @@ require 'pry'
 
 def array_of_films
   #make the web request
-  all_characters = RestClient.get('http://www.swapi.co/api/people/')
+  all_characters = RestClient.get("http://www.swapi.co/api/people/")
   character_hash = JSON.parse(all_characters)
 
   #make the web request  # iterate over the character hash to find the collection of `films` for the given
